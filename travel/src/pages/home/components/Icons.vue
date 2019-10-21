@@ -66,7 +66,7 @@
             }
         },
         computed:{
-            pages () {
+            pages () {//分页
                 const pages =[];
                 this.iconList.forEach((item,index) => {
                     const  page = Math.floor(index / 8);
