@@ -21,8 +21,8 @@
         data:function () {
             return{
                  swiperOption:{
-                     autoplay: 3000,
                      pagination:'.swiper-pagination',
+                     autoplay: 3000,
                      loop:true
                  },
                 swiperList:[{
@@ -48,7 +48,7 @@
         overflow hidden;
         width 100%;
         height 0;
-        padding-bottom 31.25%
+        padding-bottom 30.47%
     }
     .siwper-img{
         width:100%;
