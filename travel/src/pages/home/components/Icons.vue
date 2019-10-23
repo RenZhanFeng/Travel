@@ -9,6 +9,7 @@
                     <p class="icon-desc">{{item.desc}}</p>
                 </div>
             </swiper-slide>
+                <div class="swiper-pagination icons-swiper-pagination"  slot="pagination"></div>
         </swiper>
     </div>
 </template>
@@ -19,7 +20,7 @@
         data (){
             return{
                 swiperOption:{
-
+                    pagination:'.swiper-pagination',
                 },
                 iconList:[{
                     id:'001',
@@ -87,7 +88,13 @@
     .icons >>> .swiper-container{
         width: 100%;
         height: 0;
-        padding-bottom: 50%;
+        padding-bottom: 57%;
+    }
+    .icons{
+            background:$allbackgroundColor
+    }
+    .icons-swiper-pagination{
+
     }
     .icon{
         position: relative;
