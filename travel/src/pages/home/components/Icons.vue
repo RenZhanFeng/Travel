@@ -17,59 +17,20 @@
 <script>
     export default {
         name: "HomeIcons",
+        props:{
+            list:Array
+        },
         data (){
             return{
                 swiperOption:{
                     pagination:'.swiper-pagination',
-                },
-                iconList:[{
-                    id:'001',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/bus.png',
-                    desc:'汽车票轮船票还有什么票'
-            },{
-                    id:'002',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/tuan.png',
-                    desc:'旅游团购'
-                },{
-                    id:'003',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/freeTravel.png',
-                    desc:'自由行'
-                },{
-                    id:'004',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/car.png',
-                    desc:'专车自驾'
-                },{
-                    id:'005',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/aroundtravel.png',
-                    desc:'周边短途'
-                },{
-                    id:'006',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/jr.png',
-                    desc:'金融理财'
-                },{
-                    id:'007',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/card.png',
-                    desc:'保险车险'
-                },{
-                    id:'008',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/travel.png',
-                    desc:'攻略'
-                },{
-                    id:'009',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/youlun.png',
-                    desc:'邮轮'
-                },{
-                id:'010',
-                    imgUrl:'//s.qunarzz.com/homenode/images/touchheader/oversea.png',
-                    desc:'换外币'
-            }]
-
+                }
             }
         },
         computed:{
             pages () {//分页
                 const pages =[];
-                this.iconList.forEach((item,index) => {
+                this.list.forEach((item,index) => {
                     const  page = Math.floor(index / 8);
                     if (!pages[page]) {
                         pages[page] = []

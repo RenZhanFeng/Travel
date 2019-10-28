@@ -5,9 +5,9 @@
             <span class="recommend-title-desc">猜你喜欢</span>
         </div>
         <ul class="recommend-content">
-            <li class="recommend-content-item clearfix border-bottom" v-for="item of recommendList" :key="item.id">
+            <li class="recommend-content-item clearfix border-bottom" v-for="item of list" :key="item.id">
                 <a href="#" class="item-content">
-                    <div class="item-img-wrap"><img :src="item.imgURL" alt="img"></div>
+                    <div class="item-img-wrap"><img :src="item.imgUrl" alt="img"></div>
                     <div class="item-content-info">
                         <div class="item-content-info-title">{{item.title}}</div>
                         <div class="item-content-info-comment">
@@ -34,39 +34,9 @@
 <script>
     export default {
         name: "HomeRecommend",
-        data (){
-            return{
-                recommendList:[{
-                    id:'001',
-                    imgURL:'http://img1.qunarzz.com/sight/p0/1910/1c/1c8f8e8a50115fa6a3.water.jpg_200x200_019b3281.jpg',
-                    title:'深圳欢乐谷',
-                    commentText:'34445',
-                    price:'79',
-                    feature:'万圣潮玩节，AR幻乐园'
-                },{
-                    id:'002',
-                    imgURL:'http://img1.qunarzz.com/sight/p0/1910/e8/e8e2083829389f26a3.water.jpg_200x200_9704392c.jpg',
-                    title:'世界之窗',
-                    commentText:'49540',
-                    price:'38.8',
-                    feature:'巨龙来袭，万圣狂欢特惠39.9起'
-                },{
-                    id:'003',
-                    imgURL:'http://img1.qunarzz.com/sight/p0/1910/40/4053f748753ef22ea3.water.png_200x200_ef6c7fa3.png',
-                    title:'锦绣中华民俗村',
-                    commentText:'29546',
-                    price:'55',
-                    feature:'万圣聊斋夜，一起去搞鬼'
-                },{
-                    id:'004',
-                    imgURL:'http://img1.qunarzz.com/sight/p0/1507/64/34362835b4a219af8b36803d31a6380f.water.jpg_200x200_bc5c0452.jpg',
-                    title:'小梅沙海洋世界',
-                    commentText:'65141',
-                    price:'146',
-                    feature:'峡谷中的刺激游乐园~玩的就是心跳！'
-                }]
-            }
-        }
+        props:{
+            list:Array
+        },
     }
 </script>
 
