@@ -25,7 +25,7 @@
         padding: 0 0.1rem;
         text-align center;
         border-radius .06rem;
-        color #666
+        color $cityColor;
     }
 
 </style>
