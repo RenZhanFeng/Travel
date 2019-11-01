@@ -29,6 +29,10 @@
 			"id": 126,
 			"spell": "xiamen",
 			"name": "厦门"
+		}, {
+			"id": 127,
+			"spell": "shenzheng",
+			"name": "深圳"
 		}],
 		"cities": {
 			"A": [{

@@ -5,7 +5,7 @@
                <div class="title">当前城市</div>
                <div class="button-list">
                    <div class="button-wrapper">
-                       <div class="button">深圳</div>
+                       <div class="button">{{this.currentCity}}</div>
                    </div>
 
                </div>
@@ -13,7 +13,10 @@
            <div class="area">
                <div class="title">热门城市</div>
                <div class="button-list">
-                   <div class="button-wrapper" v-for="item of hotCities" :key="item.id">
+                   <div class="button-wrapper"
+                        v-for="item of hotCities"
+                        :key="item.id"
+                        @click="handleCityClick(item.name)">
                        <div class="button">{{item.name}}</div>
                    </div>
 
@@ -28,7 +31,8 @@
                <div class="item-list" >
                    <div class="item"
                         v-for="innerItem of item"
-                        :key="innerItem.id">{{innerItem.name}}</div>
+                        :key="innerItem.id"
+                        @click="handleCityClick(innerItem.name)">{{innerItem.name}}</div>
                </div>
            </div>
 
@@ -37,6 +41,7 @@
 </template>
 
 <script>
+    import {mapState} from 'vuex'
     import Bscroll from 'better-scroll'
     export default {
         name: "List",
@@ -45,15 +50,27 @@
             cities:Object,
             letter:String
         },
-        mounted() {
-            this.scroll = new Bscroll(this.$refs.wrapper);
+        computed:{
+            ...mapState({
+                currentCity:'city'
+            })
         },
+
         watch:{
             letter(){
                 const element = this.$refs[this.letter][0];
                 this.scroll.scrollToElement(element)
             }
-        }
+        },
+        methods:{
+            handleCityClick(city){
+                this.$store.dispatch('changeCity',city);
+                this.$router.push('/');
+    }
+        },
+        mounted() {
+            this.scroll = new Bscroll(this.$refs.wrapper);
+        },
 
     }
 </script>
