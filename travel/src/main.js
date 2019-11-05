@@ -6,8 +6,8 @@ import store from './store/index'
 import fastClick from 'fastclick'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
-import './assets/styles/iconfont.css'
-require('swiper/dist/css/swiper.css')
+import './assets/styles/iconfont/iconfont.css'
+require('swiper/dist/css/swiper.css');
 
 Vue.config.productionTip = false;
 

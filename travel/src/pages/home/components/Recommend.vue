@@ -5,7 +5,12 @@
             <span class="recommend-title-desc">猜你喜欢</span>
         </div>
         <ul class="recommend-content">
-            <li class="recommend-content-item clearfix border-bottom" v-for="item of list" :key="item.id">
+            <router-link
+                    tag="li"
+                    class="recommend-content-item clearfix border-bottom"
+                    v-for="item of list"
+                    :key="item.id"
+                    :to="'/detail/' + item.id">
                 <a href="#" class="item-content">
                     <div class="item-img-wrap"><img :src="item.imgUrl" alt="img"></div>
                     <div class="item-content-info">
@@ -25,7 +30,7 @@
                 </a>
                 <div>
                 </div>
-            </li>
+            </router-link>
             </ul>
         <a href="#" class="moreoPtion">查看所有产品</a>
     </div>
@@ -43,17 +48,6 @@
 <style scoped lang="stylus">
     @import '~@/assets/styles/varibles.styl'
     @import '~@/assets/styles/mixins.styl'
-
-    @font-face {
-        font-family: 'iconfont';   project id 1466551
-        src: url('//at.alicdn.com/t/font_1466551_4vu2nmgc40a.eot');
-        src: url('//at.alicdn.com/t/font_1466551_4vu2nmgc40a.eot?#iefix') format('embedded-opentype'),
-                url('//at.alicdn.com/t/font_1466551_4vu2nmgc40a.woff2') format('woff2'),
-                url('//at.alicdn.com/t/font_1466551_4vu2nmgc40a.woff') format('woff'),
-                url('//at.alicdn.com/t/font_1466551_4vu2nmgc40a.ttf') format('truetype'),
-                url('//at.alicdn.com/t/font_1466551_4vu2nmgc40a.svg#iconfont') format('svg');
-    }
-
 
     .recommend{
         margin-top:.2rem;
