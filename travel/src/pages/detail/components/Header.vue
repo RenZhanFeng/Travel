@@ -25,7 +25,7 @@
             }
         },
         methods:{
-            handleSceoll(){
+            handleScroll(){
                 let scroll = document.documentElement.scrollTop;
                 if(scroll > 20){
                     let opacity = scroll / 80;
@@ -38,7 +38,10 @@
             }
         },
         activated() {
-            window.addEventListener('scroll',this.handleSceoll)
+            window.addEventListener('scroll',this.handleScroll)
+        },
+        deactivated() {
+            window.removeEventListener('scroll',this.handleScroll)
         }
     }
 </script>
