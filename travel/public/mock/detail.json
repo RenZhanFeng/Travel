@@ -1,9 +1,11 @@
 {
   "ret": true,
   "data": {
-    "sightName": "大连圣亚海洋世界(AAAA景区)",
-    "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
-    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+    "sightName": "深圳欢乐谷(AAAAA景区)",
+    "bannerImg": "//img1.qunarzz.com/sight/p0/1911/19/19c67fe4c7f8041ba3.water.jpg_600x330_5796a069.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1412/42/ab493fd01bc3d2b2b0874fe0b0ae5540.water.jpg_r_800x800_b0342038.jpg",
+                    "http://img1.qunarzz.com/sight/p0/1412/4b/632fe62f622b9b112cdf9f3b80ce8f78.water.jpg_r_800x800_a387b255.jpg",
+                    "http://img1.qunarzz.com/sight/p0/1503/e7/e7b8f9817f197d28.water.jpg_r_800x800_e6fb7122.jpg"],
     "recommendList": [{
       "id": "0001",
       "imgUrl": "http://img1.qunarzz.com/sight/p0/1504/ea/ea1547edc307bed5.water.jpg_200x200_087f8040.jpg",
