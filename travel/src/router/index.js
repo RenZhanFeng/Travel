@@ -19,7 +19,12 @@ const router = new Router({
         path: '/detail/:id',
         name: 'Detail',
         component: Detail
-    }]
+    }],
+    scrollBehavior () {
+        return { x: 0, y: 0 }
+    }//滚动行为，换页面是滚到最上面
+
 });
+
 
 export default router

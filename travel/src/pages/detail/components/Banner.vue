@@ -59,7 +59,7 @@
         display flex
         position absolute;
         left 0;
-        bottom .08rem;
+        bottom .15rem;
         width 100%;
     }
     .banner-title{

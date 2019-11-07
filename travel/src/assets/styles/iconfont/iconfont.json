@@ -13,11 +13,25 @@
       "unicode_decimal": 58954
     },
     {
+      "icon_id": "1005787",
+      "name": "去哪儿",
+      "font_class": "changyonglogo34",
+      "unicode": "e71b",
+      "unicode_decimal": 59163
+    },
+    {
       "icon_id": "1008575",
       "name": "图片",
       "font_class": "tupian",
       "unicode": "e691",
       "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "2121722",
+      "name": "门票",
+      "font_class": "menpiao",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
     },
     {
       "icon_id": "2674472",
@@ -34,6 +48,13 @@
       "unicode_decimal": 58930
     },
     {
+      "icon_id": "3050508",
+      "name": "定位",
+      "font_class": "location",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
       "icon_id": "3205015",
       "name": "五角星",
       "font_class": "wujiaoxing-",
@@ -41,11 +62,46 @@
       "unicode_decimal": 58951
     },
     {
+      "icon_id": "3814652",
+      "name": "门票",
+      "font_class": "menpiao1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3930493",
+      "name": "旗子",
+      "font_class": "qizi",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "7338643",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "7404314",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e77c",
+      "unicode_decimal": 59260
+    },
+    {
       "icon_id": "7549357",
       "name": "注意",
       "font_class": "RectangleCopy",
       "unicode": "e6a2",
       "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "10809885",
+      "name": "向右 箭头",
+      "font_class": "changyongtubiao-xianxingdaochu-zhuanqu-",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
     }
   ]
 }
