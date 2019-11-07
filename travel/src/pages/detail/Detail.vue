@@ -5,7 +5,7 @@
 
             <detail-base-info></detail-base-info>
             <detail-recommend :list="recommendList"></detail-recommend>
-            <detail-list></detail-list>
+            <detail-list :list="list"></detail-list>
 
         <detail-footer></detail-footer>
     </div>
@@ -32,7 +32,60 @@
         },
         data(){
             return{
-                recommendList:[]
+                recommendList:[],
+                list:[{
+                    "title": "万圣潮玩节",
+                    "children": [{
+                        "title": "潮玩节特惠夜场双人票",
+                        "priceIcon" : "￥",
+                        "price" : "99.8",
+                        "pricebuttom" : "起"
+                    },{
+                        "title": "潮玩节夜场票",
+                        "priceIcon" : "￥",
+                        "price" : "49.9",
+                        "pricebuttom" : "起"
+                    }]
+                }, {
+                    "title": "日夜场通玩票",
+                    "children": [{
+                        "title": "[双十一预售]日夜场通玩成人票",
+                        "priceIcon" : "￥",
+                        "price" : "115",
+                        "pricebuttom" : "起"
+                    },{
+                        "title": "[提前1天预订]成人票",
+                        "priceIcon" : "￥",
+                        "price" : "220",
+                        "pricebuttom" : "起"
+                    },{
+                        "title": "[提前1天预订]长者/儿童票",
+                        "priceIcon" : "￥",
+                        "price" : "120",
+                        "pricebuttom" : "起"
+                    },]
+                },{
+                    "title": "年卡",
+                    "children": [{
+                        "title": "深圳欢乐谷成人年卡",
+                        "priceIcon" : "￥",
+                        "price" : "440",
+                        "pricebuttom" : "起"
+                    }]
+                },{
+                    "title": "团队票",
+                    "children": [{
+                        "title": "深圳欢乐谷全天门票儿童票(幼儿多人票,10人起订)",
+                        "priceIcon" : "￥",
+                        "price" : "75",
+                        "pricebuttom" : "起"
+                    },{
+                        "title": "学生团队票",
+                        "priceIcon" : "￥",
+                        "price" : "130",
+                        "pricebuttom" : "起"
+                    }]
+                }]
             }
         },
         methods:{
@@ -58,8 +111,5 @@
 <style scoped lang="stylus">
     .main{
         background: #f3f3f3;
-    }
-    .container{
-        height 50rem;
     }
 </style>

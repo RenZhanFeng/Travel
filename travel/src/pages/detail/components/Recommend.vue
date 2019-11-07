@@ -10,7 +10,7 @@
                     class="recommend-content-item clearfix border-bottom"
                     v-for="item of list"
                     :key="item.id"
-                    :to="'/detail/' + item.id">
+                    :to="'/detail/item' + item.id">
                 <a href="#" class="item-content">
                     <div class="item-img-wrap"><img :src="item.imgUrl" alt="img"></div>
                     <div class="item-content-info">
