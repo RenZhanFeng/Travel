@@ -12,13 +12,19 @@
                 </div>
             </div>
         </div>
-
-        <common-gallery :imgs="gallaryImgs" v-show="showGallery" @close="handleGalleryClose"></common-gallery>
+        <fade-animation>
+            <common-gallery
+                :imgs="gallaryImgs"
+                v-show="showGallery"
+                @close="handleGalleryClose">
+            </common-gallery>
+        </fade-animation>
     </div>
 </template>
 
 <script>
     import CommonGallery from '../../../components/gallery/Gallery'
+    import FadeAnimation from '../../../components/fadeAnimation/FadeAnimation'
     export default {
         name: "DetailBanner",
         props:{
@@ -40,7 +46,8 @@
             }
         },
         components:{
-            CommonGallery
+            CommonGallery,
+            FadeAnimation
         }
     }
 </script>
