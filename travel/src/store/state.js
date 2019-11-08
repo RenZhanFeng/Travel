@@ -1,4 +1,4 @@
-let defaultCity = '深圳'
+let defaultCity = '深圳';
 try{
     if (localStorage.city) {
         defaultCity = localStorage.city
@@ -6,5 +6,6 @@ try{
 } catch (e) {}
 
 export default {
-    city: defaultCity
+    city: defaultCity,
+    scenic:''
 }

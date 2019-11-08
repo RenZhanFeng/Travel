@@ -4,6 +4,9 @@ export default {
     try{
         localStorage.city = city;
     }catch (e){}
+    },
+    changeScenic(state,scenic){
+        state.scenic = scenic;
     }
 
 }

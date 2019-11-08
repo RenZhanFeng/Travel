@@ -11,7 +11,7 @@
                     v-for="item of list"
                     :key="item.id"
                     :to="'/detail/' + item.id">
-                <a href="#" class="item-content">
+                <a href="#" class="item-content"  @click="handleRecommendClick(item.title)">
                     <div class="item-img-wrap"><img :src="item.imgUrl" alt="img"></div>
                     <div class="item-content-info">
                         <div class="item-content-info-title">{{item.title}}</div>
@@ -42,6 +42,11 @@
         props:{
             list:Array
         },
+        methods:{
+            handleRecommendClick(scenic){
+                this.$store.dispatch('changeScenic',scenic);
+            }
+        }
     }
 </script>
 

@@ -8,7 +8,7 @@
             <router-link tag="div" to="/" class="">
                 <div class="iconfont header-fixed-back">&#xe624;</div>
             </router-link>
-            <h1>景点详情</h1>
+            <h1>{{this.$store.state.scenic}}</h1>
         </div>
     </div>
 </template>
