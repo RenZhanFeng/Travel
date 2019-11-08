@@ -183,7 +183,7 @@
         display inline-block;
         margin:.1rem 0 0 .1rem;
         border-bottom 1px solid #acacac;
-        font-size .25rem;
+        font-size .20rem;
     }
 
     .nav-top{
