@@ -72,7 +72,6 @@
         right: .46rem;
         color: #ff9800;
         font-size: .24rem;
-        word-spacing:-0.1rem;
     }
     .price-num{
         font-size: .4rem;
